@@ -26,7 +26,7 @@ function limitpm_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.0.3",
+		"version"			=> "2.0.4",
 		"guid"				=> "c13b1bac7595d16c854a60918453499a",
 		"compatibility"		=> "16*"
 	);
@@ -76,7 +76,7 @@ function limitpm_run()
 function limitpm_usergroup_permission($above)
 {
 	global $mybb, $lang, $form;
-	$lang->load("limitpm");
+	$lang->load("limitpm", true);
 
 	if($above['title'] == $lang->private_messaging && $lang->private_messaging)
 	{
