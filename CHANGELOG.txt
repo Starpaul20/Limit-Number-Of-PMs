@@ -1,0 +1,28 @@
+2.0.4
+- Bug: Fixed language error for 1.6.11
+
+2.0.3
+- Dropped MyBB 1.4 support
+- Updated plugin with 1.6.5 plugin system updates
+- Optimization and general plugin updating
+
+2.0.2
+- Bug: Fixed bug causing 'Max PM allowed Per Day' field to appear in several other sections of the Admin CP
+
+2.0.1
+- Bug: Fixed error causing the 'maxpmcount' to add in PMs in the 'Sent Items' folder when checking number of PMs
+
+2.0
+- Updated plugin to work with MyBB 1.6
+
+1.0.3
+- Updated location of Usergroup setting
+
+1.0.2
+- Bug: Fixed error causing the 'View Manager' section to return PHP error
+
+1.0.1
+- Fixed spelling error in Admin CP
+
+1.0
+- Initial release
