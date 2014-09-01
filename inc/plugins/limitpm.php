@@ -20,6 +20,9 @@ $plugins->add_hook("admin_user_groups_edit_commit", "limitpm_usergroup_permissio
 // The information that shows up on the plugin manager
 function limitpm_info()
 {
+	global $lang;
+	$lang->load("limitpm", true);
+
 	return array(
 		"name"				=> $lang->limitpm_info_name,
 		"description"		=> $lang->limitpm_info_desc,
@@ -61,7 +64,7 @@ function limitpm_run()
 	// Check group limits
 	if($mybb->usergroup['maxpmsday'] > 0)
 	{
-		$query = $db->simple_select("privatemessages", "COUNT(*) AS sent_count", "fromid='".intval($mybb->user['uid'])."' AND folder != 2 AND dateline >= '".(TIME_NOW - (60*60*24))."'");
+		$query = $db->simple_select("privatemessages", "COUNT(*) AS sent_count", "fromid='".(int)$mybb->user['uid']."' AND folder != 2 AND dateline >= '".(TIME_NOW - (60*60*24))."'");
 		$sent_count = $db->fetch_field($query, "sent_count");
 		if($sent_count >= $mybb->usergroup['maxpmsday'])
 		{
@@ -88,7 +91,7 @@ function limitpm_usergroup_permission($above)
 function limitpm_usergroup_permission_commit()
 {
 	global $mybb, $updated_group;
-	$updated_group['maxpmsday'] = intval($mybb->input['maxpmsday']);
+	$updated_group['maxpmsday'] = (int)$mybb->input['maxpmsday'];
 }
 
 ?>
