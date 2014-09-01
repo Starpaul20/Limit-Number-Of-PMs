@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Limit Number of PMs (2.0.4) for MyBB 1.6
+Limit Number of PMs (1.0) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
@@ -10,6 +10,8 @@ Allows Administrators to limit the number of Private Messages (PMs) that users i
 The usergroup permission are located under the 'Private Messaging' section of the 'Users and Permissions' tab when editing a usergroup.
 
 This plugin offers full language support.
+
+The 'oldrelease' branch contains the 1.6 version of the plugin.
 
 
 ## INSTALLATION ##

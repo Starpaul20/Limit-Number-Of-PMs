@@ -1,7 +1,7 @@
 <?php
 /**
  * Limit number of PMs
- * Copyright 2010 Starpaul20
+ * Copyright 2009 Starpaul20
  */
 
 // Disallow direct access to this file for security reasons
@@ -26,9 +26,8 @@ function limitpm_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.0.4",
-		"guid"				=> "c13b1bac7595d16c854a60918453499a",
-		"compatibility"		=> "16*"
+		"version"			=> "1.0",
+		"compatibility"		=> "18*"
 	);
 }
 
