@@ -1,6 +1,6 @@
 <?php
 /**
- * Limit number of PMs
+ * Limit Number of PMs
  * Copyright 2009 Starpaul20
  */
 
@@ -21,8 +21,8 @@ $plugins->add_hook("admin_user_groups_edit_commit", "limitpm_usergroup_permissio
 function limitpm_info()
 {
 	return array(
-		"name"				=> "Limit number of PMs",
-		"description"		=> "Allows you to limit the number of Private Messages that a user in a usergroup can send in a day.",
+		"name"				=> $lang->limitpm_info_name,
+		"description"		=> $lang->limitpm_info_desc,
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",

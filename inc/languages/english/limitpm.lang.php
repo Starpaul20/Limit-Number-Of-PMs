@@ -1,8 +1,11 @@
 <?php
 /**
- * Limit number of PMs
- * Copyright 2010 Starpaul20
+ * Limit Number of PMs
+ * Copyright 2009 Starpaul20
  */
+
+$l['limitpm_info_name'] = "Limit Number of PMs";
+$l['limitpm_info_desc'] = "Allows you to limit the number of Private Messages that a user in a usergroup can send in a day.";
 
 $l['maxpmday'] = "Maximum PMs allowed Per Day";
 $l['maxpmday_desc'] = "Maximum number of private messages users in this group can send in a day. If empty, users can send an unlimited number of messages.";
