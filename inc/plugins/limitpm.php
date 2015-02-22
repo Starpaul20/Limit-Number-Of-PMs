@@ -104,7 +104,7 @@ function limitpm_usergroup_permission($above)
 function limitpm_usergroup_permission_commit()
 {
 	global $mybb, $updated_group;
-	$updated_group['maxpmsday'] = (int)$mybb->input['maxpmsday'];
+	$updated_group['maxpmsday'] = $mybb->get_input('maxpmsday', MyBB::INPUT_INT);
 }
 
 ?>
