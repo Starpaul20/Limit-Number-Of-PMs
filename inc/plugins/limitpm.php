@@ -95,7 +95,7 @@ function limitpm_usergroup_permission($above)
 
 	if($above['title'] == $lang->private_messaging && $lang->private_messaging)
 	{
-		$above['content'] .= "<div class=\"group_settings_bit\">{$lang->max_pms_per_day}:<br /><small>{$lang->max_pms_per_day_desc}</small><br /></div>".$form->generate_text_box('maxpmsday', $mybb->input['maxpmsday'], array('id' => 'maxpmsday', 'class' => 'field50'));
+		$above['content'] .= "<div class=\"group_settings_bit\">{$lang->max_pms_per_day}:<br /><small>{$lang->max_pms_per_day_desc}</small><br /></div>".$form->generate_numeric_field('maxpmsday', $mybb->input['maxpmsday'], array('id' => 'maxpmsday', 'class' => 'field50', 'min' => 0));
 	}
 
 	return $above;
