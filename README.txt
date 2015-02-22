@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Limit Number of PMs (1.0) for MyBB 1.8
+Limit Number of PMs (1.1) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
